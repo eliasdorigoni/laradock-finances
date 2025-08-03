@@ -1,0 +1,17 @@
+services:
+    workspace:
+      restart: no
+    php-fpm:
+      restart: no
+    php-worker:
+      restart: no
+    laravel-horizon:
+      restart: no
+    nginx:
+      restart: no
+    hhvm:
+      restart: no
+    mysql:
+      restart: no
+    redis:
+      restart: no

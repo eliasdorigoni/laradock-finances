@@ -14,7 +14,7 @@ services:
 
 ### Workspace Utilities ##################################
     workspace:
-      restart: always
+      restart: no
       build:
         context: ./workspace
         args:
@@ -176,7 +176,7 @@ services:
 
 ### PHP-FPM ##############################################
     php-fpm:
-      restart: always
+      restart: no
       build:
         context: ./php-fpm
         args:
@@ -297,7 +297,7 @@ services:
 
 ### PHP Worker ############################################
     php-worker:
-      restart: always
+      restart: no
       build:
         context: ./php-worker
         args:
@@ -359,7 +359,7 @@ services:
 
 ### NGINX Server #########################################
     nginx:
-      restart: always
+      restart: no
       build:
         context: ./nginx
         args:
@@ -389,7 +389,7 @@ services:
 
 ### Docker-in-Docker ################################################
     docker-in-docker:
-      restart: always
+      restart: no
       image: docker:20.10-dind
       environment:
         DOCKER_TLS_SAN: DNS:docker-in-docker
