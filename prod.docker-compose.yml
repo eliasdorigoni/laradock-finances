@@ -292,6 +292,7 @@ services:
         - workspace
       networks:
         - backend
+        - homeserver
       links:
         - docker-in-docker
 
